@@ -1,0 +1,97 @@
+###1.What is dictionary in Python? Explain with an example 
+
+Dictionary in Python is an unordered 
+collection of data values, used to store data 
+values like a map, which unlike other Data 
+Types that hold only single value as an 
+element, Dictionary holds key:value pair. 
+Key value is provided in the dictionary to 
+make it more optimized.
+
+Creating a Dictionary:-
+In Python, a Dictionary can be created by 
+placing sequence of elements within curly ;
+{} braces, separated by ‘comma’. 
+Dictionary holds a pair of values, one being 
+the Key and the other corresponding pair 
+element being its Key:value. Values in a 
+dictionary can be of any datatype and can 
+be duplicated, whereas keys can’t be 
+repeated and must be immutable.
+
+Syntax for Python Dictionary:
+
+  Dict = { ' Tim': 18,  'xyz':6,.... }
+  
+Simple example:
+  
+Dict = {'apple':1, 'banana':2, 'mango':3} 
+print("\nDictionary with the use of Integer Keys: ") 
+print(Dict) 
+
+output:-
+Dictionary with the use of Integer Keys:
+{'apple': 1, 'banana': 2, 'mango': 3}
+
+###3.Write a Python program to sum all the items in a list. 
+
+def sum_list(items):
+    sum_numbers = 0
+    for x in items:
+        sum_numbers += x
+    return sum_numbers
+print(sum_list([1,2,8]))
+
+#output:-11
+
+###4.Write a Python program to create a list of empty dictionaries. 
+
+n = 5
+l = [{} for _ in range(n)]
+print(l)
+
+#output:-[{}, {}, {}, {}, {}]
+
+###5.Write a Python program to access dictionary keys element by index. 
+
+num = {'physics': 80, 'math': 90, 'chemistry': 86}
+print(list(num)[0])
+
+#output:-physics
+
+###6.Write a Python program to iterate over dictionaries using for loops 
+
+d = {'Red': 1, 'Green': 2, 'Blue': 3} 
+for color_key, value in d.items():
+     print(color_key, 'corresponds to ', d[color_key]) 
+
+#output:-
+#Red corresponds to  1  
+#Blue corresponds to  3  
+#Green corresponds to  2 
+
+###7.Write a Python program to sum all the items in a dictionary. 
+
+my_dict = {'data1':100,'data2':-54,'data3':247}
+print(sum(my_dict.values()))
+
+#output:-293
+
+###8.Write a Python script to concatenate following dictionaries to create a new one. Sample Dictionary : 
+#a. dic1={1:10, 2:20} 
+#b. dic2={3:30, 4:40} 
+#c. dic3={5:50,6:60} 
+#Expected Result : {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60} 
+
+dic1={1:10, 2:20}
+dic2={3:30, 4:40}
+dic3={5:50,6:60}
+dic4 = {}
+for d in (dic1, dic2, dic3): dic4.update(d)
+print(dic4)
+
+#output:-{1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+
+
+
+
